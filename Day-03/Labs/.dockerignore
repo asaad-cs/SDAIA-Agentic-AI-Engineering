@@ -1,0 +1,15 @@
+# Secrets — must never be baked into the image (Step 3)
+.env
+
+# Python bytecode — not needed inside the container
+__pycache__
+*.pyc
+*.pyo
+
+# Generated output — belongs in a volume, not the image (Step 4)
+final_report.txt
+
+# Git and docs — not needed at runtime
+.git
+.gitkeep
+*.md
